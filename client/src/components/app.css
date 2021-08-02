@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #566885;
+}
+body {
+    background-color: #E9E6E6;
+}
+#root {
+    width: 100%;
+}
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrap {
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lesson_link div div,
+.lesson_link_student div,
+.lesson_header_link div,
+.lesson_header_student div,
+.lesson_header_teacher div,
+.lesson_teacher div,
+.lesson_student div{
+    justify-self: center;
+}
+
+.lesson_link,
+.lesson_link_student,
+.lesson_student,
+.lesson_teacher {
+    padding: 5px 0;
+    margin: 10px 10px;
+    display: grid;
+    border: double;
+}
+
+.lesson_link{
+    grid-template-columns: 9fr 1fr;
+}
+
+.lesson_link_student {
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+}
+
+.lesson_student {
+    grid-template-columns: 1fr 2fr 2fr;
+}
+
+.lesson_teacher {
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+}
+
+.lesson_link_div{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr ;
+}
+
+.lesson_head,
+.lesson_header_link,
+.lesson_header_teacher,
+.lesson_header_student {
+    margin: 10px ;
+    display: grid;
+}
+
+.lesson_head {
+    border-bottom: solid 2px #566885;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+}
+
+.lesson_header_link {
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+}
+
+.lesson_header_teacher {
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    justify-self: center;
+}
+
+.lesson_header_student {
+    grid-template-columns: 1fr 2fr 2fr;
+    justify-self: center;
+}
+
+.lesson_list div, .lesson_list h3{
+    padding-top: 5px;
+}
+
+.lessonday_header h3 {
+    margin: 5px 10px;
+}
+
+.lessonday {
+    border: double 1px darkblue;
+    margin-top: 10px;
+}
+
+.navigation_teacher  {
+    display: flex;
+    border: double 1px darkblue;
+    justify-content: space-around;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.create {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.create button {
+    margin-left: 20px;
+    padding: 3px;
+}
+
+.parametr{
+    display: inline-flex;
+
+ }
+.parametr-date {
+    border: dashed;
+}
+
+.display_btn, .sort{
+    margin: 10px 0 5px 10px ;
+    padding: 3px;
+}
+
+.sort {
+    padding: 4px;
+}
+
+.parametr input, .input input, .input textarea {
+    border: solid 1px;
+    margin: 10px 0 5px 10px ;
+    padding: 2px;
+    background: white;
+}
+
+h2.parametr {
+    margin: 10px 0 5px 10px ;
+}
+
+.display_btn {
+    background: #566885;
+    color: white;
+}
+
+.input {
+    display: flex;
+}
+
+.input i{
+    margin: 10px 0;
+}
+
+.header_lk{
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+div.lesson_link:hover {
+    color: darkblue;
+}
+
+.lessonday_header {
+    margin: 0 10px;
+    display: flex;
+}
+
+.list {
+    padding: 10px 0 0 20px;
+}
+
+.list li{
+    font-size: 18px;
+}
+
+.groups li a:hover, .groups li:hover{
+    color: darkblue;
+}
+
+.back {
+    padding: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+table, td, th {
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 3px;
+}
+
+.mark {
+    text-align: center;
+}
+
+.mark input {
+    border: none;
+    width: 50px;
+    text-align: center;
+    padding: 0;
+}
+
+.mark:hover {
+    background: #f8f8f8;
+}
+
+.popup {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup__content {
+    width: 450px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.popup__create, .popup__close {
+    align-self: flex-end;
+    padding: 3px;
+}
+
+.popup__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.popup input {
+    margin: 20px 0;
+}
+
+.popup__object {
+    display: flex;
+    justify-content: stretch;
+    margin: 5px 0;
+}
+
+.popup__object  select{
+    width: 100%;
+    margin-left: 5px;
+}

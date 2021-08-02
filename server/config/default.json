@@ -1,0 +1,5 @@
+{
+  "serverPort": 5000,
+  "dbURL": "mongodb+srv://lopatina:lopatina@cluster0.sqeba.mongodb.net/university?retryWrites=true&w=majority",
+  "secretKey": "Secret key JWT"
+}
